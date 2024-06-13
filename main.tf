@@ -19,5 +19,18 @@ variable "params" {
     {name= "roboshop.dev.catalogue.mongo_url",value = "mongo-dev.smitdevops.store", type = "String"},
     {name= "roboshop.dev.shiiping.cart_endpoint",value = "cart-dev.smitdevops.store:8080", type = "String"},
     {name= "roboshop.dev.shipping.db_host",value = "mysql-dev.smitdevops.store", type = "String"},
+    {name= "roboshop.dev.payment.cart_host",value = "cart-dev.smitdevops.store", type = "String"},
+    {name= "roboshop.dev.payment.cart_port",value = "8080", type = "String"},
+    {name= "roboshop.dev.payment.user_host",value = "user-dev.smitdevops.store", type = "String"},
+    {name= "roboshop.dev.payment.user_port",value = "8080", type = "String"},
+    {name= "roboshop.dev.payment.amqp_host",value = "rabbitmq-dev.smitdevops.store", type = "String"},
+    {name= "roboshop.dev.payment.amqp_user",value = "roboshop", type = "String"},
+    {name= "roboshop.dev.user.mongo",value = "true", type = "String"},
+    {name= "roboshop.dev.user.redis_host",value = "redis-dev.smitdevops.store", type = "String"},
+    {name= "roboshop.dev.user.mongo_url",value = "mongodb://mongo-dev.smitdevops.store:27017/users", type = "String"},
+
+
+    ##secret
+    {name= "roboshop.dev.payment.amqp_pass",value = "roboshop123", type = "SecureString"},
   ]
 }
