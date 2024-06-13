@@ -1,4 +1,4 @@
 default:
 	@git pull
 	@terraform init
-	@terraform apply
+	@terraform apply -auto-approve
